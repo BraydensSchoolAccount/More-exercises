@@ -67,5 +67,3 @@ print("Exercise 6: Strip. \nwait STRINGS I MEANT STRINGS-\n")
 
 bad_name = "$$John**"
 
-print("I'm using regex for the first one")
-print(bad_name)
