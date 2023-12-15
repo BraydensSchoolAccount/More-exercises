@@ -18,20 +18,46 @@ def next_exercise(exercise_name):
     print(f"Exercise {exercise_int}: {exercise_name}\n")
     exercise_int+=1
 
+
 next_exercise("Deep... (crying pepe emoji)")
 
 quote = "In place of death, there was light"
 
-print(f"\"{quote}\" is the quote")
 # Use strings being arrays to our advantage by splicing them like arrays
 print(f"The first 5 characters of it are \"{quote[0:5]}\"")
 print(f"Characters 10-15 are \"{quote[10:15]}\"")
 
 next_exercise("\"I don't know much about my name...\"")
 
-# This code is a botch
-# Get users name and add an extra character
-user_name = input("What is your name? >  ") + " "
+# Get users name
+user_name = input("What is your name? >  ")
 
-# The intuitive thing would be using 0 and -3. [-3:0], [0:-3] both return the wrong thing
-print(f"The last three characters of your name are \"{user_name[-4:-1]}\"")
+# This types the last 3 characters, and the empty colon starts it from the beginning of the string
+# Unlike 0 for some reason
+print(f"The last three characters of your name are \"{user_name[-3:]}\"")
+
+next_exercise("You really don't")
+
+first_name = input("What is first name? >  ")
+last_name = input("What is last name? >  ")
+
+full_name = f"{first_name} {last_name}"
+
+print("HELLO",full_name.upper())
+print(full_name.title())
+print(full_name.lower())
+
+next_exercise("Finding a python")
+
+fact = "Every student can learn the Python language."
+
+print(fact.find("Python"))
+
+next_exercise("\t\t\t\t\tE")
+
+print(f"There are {fact.count('e')} lowercase e's in {fact}")
+
+next_exercise("Who puts sentences in bullet point format?!")
+
+todo = ["Yo", "I", "see", "many", "bats", "flying", "around"]
+print(" ".join(todo))
